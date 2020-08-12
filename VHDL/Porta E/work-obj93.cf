@@ -1,0 +1,13 @@
+v 3
+file . "porta.vhd" "20200810200728.000" "20200810170730.723":
+  entity porta at 1( 0) + 0 on 19;
+  architecture a_porta of porta at 12( 175) + 0 on 20;
+file . "porta_e.vhd" "20200810194300.000" "20200810165154.442":
+  entity porta_e at 1( 0) + 0 on 11;
+  architecture aporta_e of porta_e at 8( 138) + 0 on 12;
+file . "porta_e_tb.vhd" "20200810194354.000" "20200810165201.832":
+  entity porta_e_tb at 1( 0) + 0 on 13;
+  architecture aporta_e_tb of porta_e_tb at 5( 80) + 0 on 14;
+file . "porta_tb.vhd" "20200810202340.000" "20200810172356.993":
+  entity porta_tb at 1( 0) + 0 on 27;
+  architecture a_porta_tb of porta_tb at 7( 75) + 0 on 28;
