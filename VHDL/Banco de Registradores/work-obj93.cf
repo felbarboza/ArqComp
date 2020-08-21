@@ -1,16 +1,28 @@
 v 3
-file . "bancoreg_tb.vhd" "20200819192248.000" "20200819162439.212":
-  entity bancoreg_tb at 1( 0) + 0 on 27;
-  architecture a_bancoreg_tb of bancoreg_tb at 8( 124) + 0 on 28;
-file . "ula16bits.vhd" "20200819181010.000" "20200819160013.386":
-  entity ula at 1( 0) + 0 on 15;
-  architecture a_ula of ula at 13( 316) + 0 on 16;
-file . "mux.vhd" "20200819185928.000" "20200819155932.581":
-  entity mux at 1( 0) + 0 on 11;
-  architecture a_mux of mux at 11( 230) + 0 on 12;
-file . "reg16bits.vhd" "20200819185958.000" "20200819160002.196":
-  entity reg16bits at 1( 0) + 0 on 13;
-  architecture a_reg16bits of reg16bits at 15( 273) + 0 on 14;
-file . "bancoreg.vhd" "20200819190302.000" "20200819160305.036":
+file . "ula.vhd" "20200821002056.000" "20200820212114.349":
+  entity ula at 1( 0) + 0 on 33;
+  architecture a_ula of ula at 13( 316) + 0 on 34;
+file . "reg16bits_tb.vhd" "20200821001128.000" "20200820211220.023":
+  entity reg16bits_tb at 1( 0) + 0 on 29;
+  architecture a_reg16bits_tb of reg16bits_tb at 8( 113) + 0 on 30;
+file . "bancoreg.vhd" "20200820222800.000" "20200820193251.053":
   entity bancoreg at 1( 0) + 0 on 17;
   architecture a_bancoreg of bancoreg at 19( 472) + 1 on 18;
+file . "mux.vhd" "20200819185928.000" "20200820193225.669":
+  entity mux at 1( 0) + 0 on 13;
+  architecture a_mux of mux at 11( 230) + 0 on 14;
+file . "reg16bits.vhd" "20200819185958.000" "20200820193218.663":
+  entity reg16bits at 1( 0) + 0 on 11;
+  architecture a_reg16bits of reg16bits at 15( 273) + 0 on 12;
+file . "bancoreg_tb.vhd" "20200821003330.000" "20200820213336.943":
+  entity bancoreg_tb at 1( 0) + 0 on 37;
+  architecture a_bancoreg_tb of bancoreg_tb at 8( 124) + 0 on 38;
+file . "mux_tb.vhd" "20200821000434.000" "20200820210446.612":
+  entity mux_tb at 1( 0) + 0 on 27;
+  architecture a_mux_tb of mux_tb at 8( 107) + 0 on 28;
+file . "general_tb.vhd" "20200821001558.000" "20200820211559.345":
+  entity general_tb at 1( 0) + 0 on 31;
+  architecture a_general_tb of general_tb at 8( 122) + 0 on 32;
+file . "ula_tb.vhd" "20200821002104.000" "20200820212123.836":
+  entity ula_tb at 1( 0) + 0 on 35;
+  architecture a_ula_tb of ula_tb at 8( 107) + 0 on 36;

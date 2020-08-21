@@ -37,6 +37,25 @@ entity bancoreg is
   reg6: reg16bits port map(clk=>clk, rst=>rst, wr_en=>wr_en6, data_in=>data_in, data_out=>reg6_out);
   reg7: reg16bits port map(clk=>clk, rst=>rst, wr_en=>wr_en7, data_in=>data_in, data_out=>reg7_out);
   
+  saida_1 <= reg0_out when seleciona_reg1 = "000" else
+            reg1_out when seleciona_reg1 = "001" else
+            reg2_out when seleciona_reg1 = "010" else
+            reg3_out when seleciona_reg1 = "011" else
+            reg4_out when seleciona_reg1 = "100" else
+            reg5_out when seleciona_reg1 = "101" else
+            reg6_out when seleciona_reg1 = "110" else
+            reg7_out when seleciona_reg1 = "111" else
+            "0000000000000000";
+  saida_2 <= reg0_out when seleciona_reg2 = "000" else
+            reg1_out when seleciona_reg2 = "001" else
+            reg2_out when seleciona_reg2 = "010" else
+            reg3_out when seleciona_reg2 = "011" else
+            reg4_out when seleciona_reg2 = "100" else
+            reg5_out when seleciona_reg2 = "101" else
+            reg6_out when seleciona_reg2 = "110" else
+            reg7_out when seleciona_reg2 = "111" else
+            "0000000000000000";
+            
   zero<="0000000000000000";
   wr_en0 <= '1';
   wr_en1 <= enable_write when seleciona_reg_write = "001" else '0';
