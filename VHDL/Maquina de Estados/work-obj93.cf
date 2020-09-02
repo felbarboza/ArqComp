@@ -1,0 +1,7 @@
+v 3
+file . "maquinaestado_tb.vhd" "20200902184438.000" "20200902170013.917":
+  entity maquinaestado_tb at 1( 0) + 0 on 13;
+  architecture a_maquinaestado_tb of maquinaestado_tb at 8( 117) + 0 on 14;
+file . "maquinaestado.vhd" "20200902200004.000" "20200902170007.484":
+  entity maquinaestado at 1( 0) + 0 on 11;
+  architecture a_maquinaestado of maquinaestado at 13( 199) + 0 on 12;
