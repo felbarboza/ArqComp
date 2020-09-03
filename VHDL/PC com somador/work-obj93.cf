@@ -1,0 +1,13 @@
+v 3
+file . "pc_com_somador_tb.vhd" "20200903151408.000" "20200903133129.782":
+  entity pc_com_somador_tb at 1( 0) + 0 on 19;
+  architecture a_pc_com_somador_tb of pc_com_somador_tb at 8( 118) + 0 on 20;
+file . "somador.vhd" "20200902193722.000" "20200903133045.373":
+  entity somador at 1( 0) + 0 on 15;
+  architecture a_somador of somador at 12( 209) + 0 on 16;
+file . "pc.vhd" "20200903163020.000" "20200903133033.645":
+  entity pc at 1( 0) + 0 on 13;
+  architecture a_pc of pc at 15( 264) + 0 on 14;
+file . "pc_com_somador.vhd" "20200903162210.000" "20200903133103.300":
+  entity pc_com_somador at 1( 0) + 0 on 17;
+  architecture a_pc_com_somador of pc_com_somador at 12( 186) + 0 on 18;

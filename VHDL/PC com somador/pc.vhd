@@ -29,4 +29,4 @@ begin
  end process;
 
  data_out <= registro; -- conexao direta, fora do processo
-end architecture;
+end architecture a_pc;
