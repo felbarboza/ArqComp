@@ -14,7 +14,7 @@ entity bancoreg is
     saida_1: out unsigned(15 downto 0);
     saida_2: out unsigned(15 downto 0)
   );
- end entity;
+ end entity bancoreg;
  
  architecture a_bancoreg of bancoreg is
   component reg16bits is

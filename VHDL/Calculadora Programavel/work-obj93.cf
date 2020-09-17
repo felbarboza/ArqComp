@@ -1,0 +1,43 @@
+v 3
+file . "top_level_tb.vhd" "20200916221948.000" "20200916191949.566":
+  entity top_level_tb at 1( 0) + 0 on 43;
+  architecture a_top_level_tb of top_level_tb at 8( 126) + 0 on 44;
+file . "ula.vhd" "20200916220500.000" "20200916190502.790":
+  entity ula at 1( 0) + 0 on 31;
+  architecture a_ula of ula at 13( 279) + 0 on 32;
+file . "rom.vhd" "20200916215552.000" "20200916190409.411":
+  entity rom at 1( 0) + 0 on 27;
+  architecture a_rom of rom at 11( 229) + 0 on 28;
+file . "pc.vhd" "20200903172712.000" "20200916190347.678":
+  entity pc at 1( 0) + 0 on 23;
+  architecture a_pc of pc at 15( 264) + 0 on 24;
+file . "mux2x16.vhd" "20200915205410.000" "20200916190327.338":
+  entity mux2x16 at 1( 0) + 0 on 19;
+  architecture a_mux2x16 of mux2x16 at 11( 234) + 0 on 20;
+file . "bancoreg.vhd" "20200916220128.000" "20200916190234.265":
+  entity bancoreg at 1( 0) + 0 on 15;
+  architecture a_bancoreg of bancoreg at 19( 481) + 1 on 16;
+file . "reg16bits.vhd" "20200819185958.000" "20200916190222.208":
+  entity reg16bits at 1( 0) + 0 on 13;
+  architecture a_reg16bits of reg16bits at 15( 273) + 0 on 14;
+file . "maquinaestado.vhd" "20200916221644.000" "20200916191654.864":
+  entity maquinaestado at 1( 0) + 0 on 39;
+  architecture a_maquinaestado of maquinaestado at 11( 188) + 0 on 40;
+file . "mux2x7.vhd" "20200915210446.000" "20200916190336.569":
+  entity mux2x7 at 1( 0) + 0 on 21;
+  architecture a_mux2x7 of mux2x7 at 12( 268) + 0 on 22;
+file . "somador.vhd" "20200902193722.000" "20200916190356.596":
+  entity somador at 1( 0) + 0 on 25;
+  architecture a_somador of somador at 12( 209) + 0 on 26;
+file . "sign_ext.vhd" "20200916205848.000" "20200916190420.880":
+  entity sign_ext at 1( 0) + 0 on 29;
+  architecture a_sign_ext of sign_ext at 12( 236) + 0 on 30;
+file . "unidadecontrole.vhd" "20200917182206.000" "20200917152207.867":
+  entity unidadecontrole at 1( 0) + 0 on 47;
+  architecture a_unidadecontrole of unidadecontrole at 20( 458) + 0 on 48;
+file . "toplevel.vhd" "20200917174312.000" "20200917152223.152":
+  entity toplevel at 1( 0) + 0 on 49;
+  architecture a_toplevel of toplevel at 17( 514) + 0 on 50;
+file . "toplevel_tb.vhd" "20200916222026.000" "20200917152231.725":
+  entity toplevel_tb at 1( 0) + 0 on 51;
+  architecture a_toplevel_tb of toplevel_tb at 8( 124) + 0 on 52;
