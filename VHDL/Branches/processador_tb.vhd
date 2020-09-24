@@ -2,11 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity toplevel_tb is
-end entity toplevel_tb;
+entity processador_tb is
+end entity processador_tb;
 
-architecture a_toplevel_tb of toplevel_tb is
-	component toplevel is
+architecture a_processador_tb of processador_tb is
+	component processador is
 		port (
 			      rst         : in std_logic;
             clk         : in std_logic;
@@ -17,14 +17,14 @@ architecture a_toplevel_tb of toplevel_tb is
             saida_reg_2 : out unsigned(15 downto 0);
             saida_ula   : out unsigned(15 downto 0)
 		);
-	end component toplevel;
+	end component processador;
 	signal rst, clk, err_sig : std_logic;
 	signal saida_rom : unsigned(11 downto 0);
 	signal saida_pc : unsigned(6 downto 0);
   signal saida_reg_1, saida_reg_2, saida_ula : unsigned(15 downto 0);
   
 begin
-	uut : toplevel port map(rst => rst,
+	uut : processador port map(rst => rst,
 							 clk => clk,
 							 err_sig => err_sig,
 							 saida_rom => saida_rom,
@@ -48,4 +48,4 @@ begin
 		clk <= '1';
 		wait for 50 ns;
 	end process;
-end architecture a_toplevel_tb;
+end architecture a_processador_tb;
