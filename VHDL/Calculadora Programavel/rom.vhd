@@ -12,7 +12,7 @@ architecture a_rom of rom is
  type mem is array (0 to 127) of unsigned(11 downto 0);
  constant conteudo_rom : mem := (
    -- ACUMULADOR = 001
-  0 => "111100001000", -- MOV A, Zero
+  0 => "111100001000", -- MOV A, Zero 
   1 => "001100000101", -- ADDI A, 5
   2 => "111100011001", -- MOV R3, A
   3 => "001100000011", -- ADDI A, 3
