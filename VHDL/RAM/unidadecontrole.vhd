@@ -19,8 +19,7 @@ entity unidadecontrole is
     load_ram: out std_logic;
     flags_en	: out std_logic;
     flag_clr  : out std_logic;
-    operror		: out std_logic;
-    endereco_ram: out unsigned(6 downto 0)
+    operror		: out std_logic
   );
 end entity unidadecontrole;
 
@@ -44,14 +43,13 @@ begin
                         opcode="0010" or 
                         opcode="0011" or 
                         opcode="1001" or 
-                        opcode="1011") and 
+                        opcode="1011" or
+                        opcode="0100") and 
                         execute = '1' 
                         else '0';
-  load_ram <= '1' when opcode="0100" else '0';
+  load_ram <= '1' when opcode="0100" and execute='1' else '0';
 
   ram_en <= '1' when opcode="0110" and execute='1' else '0';
-
-  endereco_ram <= instruction(6 downto 0) when opcode="0110" or opcode="0100" else "0000000";
 
   jump <= '1' when  opcode="0111" or
                     (opcode="0101" and zero='0') or
@@ -76,7 +74,7 @@ begin
                         opcode="1001" or 
                         opcode="1011" or
                         opcode="0110" or
-                        opcode="0100" else --????? talvez
+                        opcode="0100" else
                         '0';
 
   pc_en <= '1' when fetch='1' and opcode_error='0' else

@@ -32,12 +32,11 @@ architecture a_processador of processador is
       load_ram: out std_logic;
       flags_en	: out std_logic;
       flag_clr  : out std_logic;
-      operror		: out std_logic;
-      endereco_ram: out unsigned(6 downto 0)
+      operror		: out std_logic
   );
   end component;
   signal jump, ulasrca, ulasrcb, ula_op, operror, acumulador, pc_en, ram_en, load_ram, banco_en, flags_en, flag_clr : std_logic;
-  signal endereco_ram: unsigned(6 downto 0);
+
   component pc is
     port(
       clk : in std_logic;
@@ -80,7 +79,7 @@ architecture a_processador of processador is
       saida_2: out unsigned(15 downto 0)
     );
   end component;
-  signal seleciona_reg1: unsigned(2 downto 0);
+  signal seleciona_reg1, seleciona_reg2: unsigned(2 downto 0);
   signal bancoreg_saida_1, bancoreg_saida_2: unsigned(15 downto 0);
 
   component ula is
@@ -187,13 +186,12 @@ architecture a_processador of processador is
                                                           load_ram=> load_ram,
                                                           flags_en	=> flags_en,
                                                           flag_clr => flag_clr,
-                                                          operror => operror,
-                                                          endereco_ram => endereco_ram);
+                                                          operror => operror);
 
     ram_inst : ram port map(clk=>clk,
-                            endereco => endereco_ram,
+                            endereco => bancoreg_saida_2(6 downto 0),
                             wr_en => ram_en,
-                            dado_in => bancoreg_saida_2,
+                            dado_in => bancoreg_saida_1,
                             dado_out => data_out_ram);
 
     pc_inst : pc port map ( rst => rst,
@@ -211,9 +209,10 @@ architecture a_processador of processador is
    
     seleciona_reg1 <= "001" when acumulador ='1' else
                       instruction(5 downto 3);
+    seleciona_reg2 <= "010" when ram_en='1' or load_ram='1' else instruction(2 downto 0);
 
     banco_reg_inst : bancoreg port map ( seleciona_reg1 => seleciona_reg1,
-                                          seleciona_reg2 => instruction(2 downto 0),
+                                          seleciona_reg2 => seleciona_reg2,
                                           seleciona_reg_write => seleciona_reg1,
                                           data_in => data_in_banco_reg,
                                           enable_write => banco_en,
