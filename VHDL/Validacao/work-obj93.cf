@@ -1,0 +1,46 @@
+v 3
+file . "processador.vhd" "20201007175132.000" "20201016190226.268":
+  entity processador at 1( 0) + 0 on 101;
+  architecture a_processador of processador at 17( 517) + 0 on 102;
+file . "ula.vhd" "20200923181508.000" "20201016165228.970":
+  entity ula at 1( 0) + 0 on 33;
+  architecture a_ula of ula at 13( 279) + 0 on 34;
+file . "sign_ext.vhd" "20200916205848.000" "20201016165220.133":
+  entity sign_ext at 1( 0) + 0 on 29;
+  architecture a_sign_ext of sign_ext at 12( 236) + 0 on 30;
+file . "pc.vhd" "20200903172712.000" "20201016165207.978":
+  entity pc at 1( 0) + 0 on 25;
+  architecture a_pc of pc at 15( 264) + 0 on 26;
+file . "mux2x16.vhd" "20200915205410.000" "20201016165159.447":
+  entity mux2x16 at 1( 0) + 0 on 21;
+  architecture a_mux2x16 of mux2x16 at 11( 234) + 0 on 22;
+file . "flags.vhd" "20200923184814.000" "20201016165149.503":
+  entity flags at 1( 0) + 0 on 17;
+  architecture a_flags of flags at 17( 316) + 0 on 18;
+file . "bancoreg.vhd" "20200916220128.000" "20201016165124.976":
+  entity bancoreg at 1( 0) + 0 on 13;
+  architecture a_bancoreg of bancoreg at 19( 481) + 1 on 14;
+file . "reg16bits.vhd" "20200819185958.000" "20201016165120.834":
+  entity reg16bits at 1( 0) + 0 on 11;
+  architecture a_reg16bits of reg16bits at 15( 273) + 0 on 12;
+file . "rom.vhd" "20201016220212.000" "20201016190221.579":
+  entity rom at 1( 0) + 0 on 97;
+  architecture a_rom of rom at 11( 229) + 0 on 98;
+file . "maquinaestado.vhd" "20200916221644.000" "20201016165154.767":
+  entity maquinaestado at 1( 0) + 0 on 19;
+  architecture a_maquinaestado of maquinaestado at 11( 188) + 0 on 20;
+file . "mux2x7.vhd" "20200915210446.000" "20201016165203.159":
+  entity mux2x7 at 1( 0) + 0 on 23;
+  architecture a_mux2x7 of mux2x7 at 12( 268) + 0 on 24;
+file . "ram.vhd" "20200930174932.000" "20201016165213.559":
+  entity ram at 1( 0) + 0 on 27;
+  architecture a_ram of ram at 15( 440) + 0 on 28;
+file . "somador.vhd" "20200902193722.000" "20201016165223.643":
+  entity somador at 1( 0) + 0 on 31;
+  architecture a_somador of somador at 12( 209) + 0 on 32;
+file . "unidadecontrole.vhd" "20201007175454.000" "20201016165232.454":
+  entity unidadecontrole at 1( 0) + 0 on 35;
+  architecture a_unidadecontrole of unidadecontrole at 26( 648) + 0 on 36;
+file . "processador_tb.vhd" "20200924233320.000" "20201016185817.525":
+  entity processador_tb at 1( 0) + 0 on 91;
+  architecture a_processador_tb of processador_tb at 8( 130) + 0 on 92;
