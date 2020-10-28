@@ -12,7 +12,7 @@ architecture a_rom of rom is
  type mem is array (0 to 127) of unsigned(11 downto 0);
  constant conteudo_rom : mem := (
    -- ACUMULADOR = 001 (R1)
-   -- ENDERECO DPTR = 010 (R2)
+   -- ENDERECO @DPTR = 010 (R2)
    -- CARREGANDO A RAM COM 2 A 32
   0 => "111100001000", -- MOV A, Zero
   1 => "001100000001", -- ADDI A, 1
